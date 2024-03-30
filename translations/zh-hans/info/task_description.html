@@ -1,0 +1,67 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    在本任务中，您需要按照以下步骤将嵌套密码字典转换为纯文本。这种转换与<a href="https://py.checkio.org/en/mission/cipher-dict-2/">Cipher Dict</a> 任务中的转换相反。 
+</p>
+
+<ol>
+    <li><p style="text-align: justify;">
+        从最上面的字典开始，提取密钥并按正确顺序排列成一个数字块。区块顺序应严格交替，第一个区块必须是升序。依次检查每个按键的值（也包括字典），以找到下一个区块，并在以后依次检查新的按键。  
+    </p></li>
+    <li><p style="text-align: justify;">
+        将所有成立的区块并入一个十进制数。
+    </p></li>
+    <li><p style="text-align: justify;">
+        将十进制值转换为十六进制数，并将结果转换为字符串。
+    </p></li>
+</ol>
+
+<p style="text-align: justify;">
+    描述可能令人困惑，让我们看看示例。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cipher-dict-rev.svg" alt="example" style="max-height: 400px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>作为字典的密码数据。
+</p>
+
+<p>
+   <strong>输出：字符串形式的原始文本：</strong>字符串形式的原始文本。
+ </p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>举例说明：</strong>
+    </p>
+
+{% if is_js %}
+<pre class="brush: javascript">
+</pre>
+{% else %}
+<pre class="brush: python">get_plain({1: {6: {3: {}}},2: {6: {5: {}}, 9: {0: {}, 5: {}}},3: {4: {5: {}}},6: {6: {4: {}}}}) == 'python'
+get_plain({1: {1: {8: {8: {8: {0: {0: {1: {3: {9: {6: {},9: {}}}, 6: {2: {0: {}}}}}, 1: {8: {0: {1: {1: {}, 7: {}, 9: {}}, 7: {0: {}, 2: {}, 3: {}}}, 5: {7: {8: {}}}}},2: {1: {0: {2: {2: {}}}}, 4: {8: {9: {0: {}, 5: {}}}}}}}}}}}}) == 'You can read me.'
+</pre>
+{% endif %}
+</div>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>如何使用：</strong>
+    <i>(作为密码可能没有价值，但对研究字符编码转换和字典结构很有用）。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件：</strong>
+    <i>文本只包含 ASCII 符号。</i>
+</p>
