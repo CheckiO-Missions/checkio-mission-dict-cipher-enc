@@ -1,16 +1,16 @@
-import assert from "assert";
+// import assert from "assert";
 
-function sumTwo(a: number, b: number): number {
+function getPlain(cipher): string {
     // your code here
-    return 0;
+    return "";
 }
 
 console.log('Example:');
-console.log(sumTwo(3, 2));
+console.log(getPlain({1: {6: {3: {}}}, 2: {6: {5: {}}, 9: {0: {}, 5: {}}},3: {4: {5: {}}}, 6: {6: {4: {}}}}));
 
 // These "asserts" are used for self-checking
-assert.equal(sumTwo(3, 2), 5);
-assert.equal(sumTwo(5, 7), 12);
+// assert.equal(sumTwo(3, 2), 5);
+// assert.equal(sumTwo(5, 7), 12);
 
-console.log("Coding complete? Click 'Check' to earn cool rewards!");
+// console.log("Coding complete? Click 'Check' to earn cool rewards!");
     

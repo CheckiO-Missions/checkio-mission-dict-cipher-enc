@@ -1,6 +1,6 @@
-def get_plain(cipher):
+def get_plain(cipher: dict) -> str:
     # your code here
-    return None
+    return ""
 
 
 if __name__ == '__main__':
